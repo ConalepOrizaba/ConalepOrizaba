@@ -60,7 +60,7 @@
             height: auto; /* Mantiene la proporción del logo */
         }
         .preceptorias {
-            background-color: #F0F0F0; /* Color gris para el fondo de las preceptorias */
+            background-color: #f0f0f0; /* Color gris para el fondo de las preceptorias */
             padding: 20px;
         }
         .preceptoria1 {
@@ -75,7 +75,7 @@
             transition: background-color 0.3s;
         }
         .preceptoria1{
-            background-color: #E0E0E0; /* Color gris claro para cada bloque */
+            background-color: #e0e0e0; /* Color gris claro para cada bloque */
             margin: 10px 0; /* Margen superior e inferior para separación */
             padding: 10px;
             cursor: pointer;
@@ -117,20 +117,28 @@
       
 
 
-<div class="preceptorias" id="preceptorias" style="background-color: #000000; padding: 10px; border: none; border-radius: 5px;">
-    <div style="text-align: center;">
-        <h2 style="color: white; font-size: 2.5em;">DISPONIBLES.</h2>
-    </div>
-</div>
-
-    <div class="preceptoria" onclick="toggleDetails('guionesEscoltas')">
-        <strong>Guiones Escoltas</strong>
-        <div id="guionesEscoltas" style="display: none;">
-            <p>Participa en esta emocionante actividad que enseña sobre la importancia de la disciplina, el trabajo en equipo y la representación institucional. Mejora tus habilidades de comunicación y liderazgo mientras aprendes a coordinar movimientos precisos.</p>
-            <p>Horario:<br>Miércoles y viernes de 14:00 a 15:30 pm</p>
-            <p>Preceptor: Alfredo Cantú Calderón.</p>
+    <div class="preceptorias" id="preceptorias" style="background-color: #000000; padding: 10px; border: none; border-radius: 5px;">
+        <div style="text-align: center;">
+            <img src="DISPO.jpg" alt="Imagen disponible" style="max-width: 100%; height: auto;">
         </div>
     </div>
+    
+    <div class="preceptoria" onclick="this.querySelector('.right').style.color = this.querySelector('.details').style.display === 'none' ? '#ffffff' : '#555555'; this.querySelector('.details').style.display = this.querySelector('.details').style.display === 'none' ? 'block' : 'none';">
+        <strong>Oratoria <span class="right" style="color: #636363; margin-left: 10px;">¡Recientemente añadido!</span></strong>
+        <div class="details" style="display: none;">
+            <p>Desarrolla tus habilidades de comunicación y liderazgo mientras aprendes a hablar en público con confianza. Mejora tu capacidad de expresar ideas de manera clara y persuasiva. Si te apasiona la palabra y deseas destacar en presentaciones o discursos, la oratoria es la oportunidad perfecta para ti.</p>
+            <p>Horario:<br>Miércoles de 14:00 a 15:00 horas<br>Viernes de 14:00 a 15:00 horas</p>
+            <p>Preceptor: Jocelin Briones Hernández.</p>
+        </div>
+    </div>   
+    <div class="preceptoria" onclick="this.querySelector('.right').style.color = this.querySelector('.details').style.display === 'none' ? '#ffffff' : '#555555'; this.querySelector('.details').style.display = this.querySelector('.details').style.display === 'none' ? 'block' : 'none';">
+        <strong>(DJ) Sonido e Iluminación <span class="right" style="color: #636363; margin-left: 10px;">¡Recientemente añadido!</span></strong>
+        <div class="details" style="display: none;">
+            <p>Sumérgete en el electrizante mundo del DJing y domina el arte de mezclar música y controlar las luces que encienden cualquier ambiente. Aprende a utilizar el equipo profesional de sonido e iluminación, mientras descubres los secretos detrás de las mejores mezclas y efectos que hacen vibrar a una audiencia. Si te apasiona la música y sueñas con ser el alma de la fiesta, ¡esta preceptoría es para ti!</p>
+            <p>Horario:<br>Miércoles de 14:00 a 15:00 horas<br>Viernes de 14:00 a 16:00 pm</p>
+            <p>Preceptor: Axel Giovanni Sánchez Ochoa.</p>
+        </div>
+    </div>    
     <div class="preceptoria" onclick="toggleDetails('rondalla')">
         <strong>Rondalla</strong>
         <div id="rondalla" style="display: none;">
@@ -251,15 +259,6 @@
         <p>Preceptor: Axel Giovanni Sánchez Ochoa.</p>
     </div>
 </div>
-<div class="preceptoria" onclick="toggleDetails('oratoria')">
-    <strong>Oratoria</strong>
-    <div id="oratoria" style="display: none;">
-        <p>Desarrolla tus habilidades de comunicación y liderazgo mientras aprendes a hablar en público con confianza. Mejora tu capacidad de expresar ideas de manera clara y persuasiva. Si te apasiona la palabra y deseas destacar en presentaciones o discursos, la oratoria es la oportunidad perfecta para ti.</p>
-        <p>Horario:<br>Miércoles de 14:00 a 15:00 horas<br>Viernes de 14:00 a 15:00 horas</p>
-        <p>Preceptor: Jocelin Briones Hernández.</p>
-    </div>
-</div>
-
 <div class="preceptoria" onclick="toggleDetails('proteccionCivil')">
     <strong>Protección Civil</strong>
     <div id="proteccionCivil" style="display: none;">
@@ -273,8 +272,10 @@
 
 
 
-<div style="background-color: #000000; padding: 10px; border-radius: 5px; text-align: center;">
-     <h2 style="color: white; font-size: 2.5em;">NO DISPONIBLES.</h2>
+<div class="preceptorias" id="preceptorias" style="background-color: #000000; padding: 10px; border: none; border-radius: 5px;">
+    <div style="text-align: center;">
+        <img src="NODISPO.jpg" alt="Imagen disponible" style="max-width: 100%; height: auto;">
+    </div>
 </div>
 <div class="preceptoria1" onclick="toggleDetails('bandaGuerraRitmica')">
     <strong>Banda de Guerra Rítmica</strong>
