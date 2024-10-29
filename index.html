@@ -333,28 +333,42 @@
 </div>
 
 
-<div class="contact-form" id="contacto" style="text-align: center;">
+<div class="contact-form" id="contacto">
     <h2 style="font-size: 3em;">CONTACTO</h2>
     <span style="font-weight: bold; font-size: 1.1em;">¡Comparte Tu Talento!</span>
     <p>Si posees una habilidad que te gustaría enseñar, completa el formulario y agendaremos una cita para conversar sobre tu propuesta. Se enviarán tus datos por correo al departamento de preceptorias. ¡Tu esfuerzo puede ser recompensado!</p>
 
     <form action="mailto:acantu252@ver.conalep.edu.mx" method="post" enctype="text/plain" style="max-width: 400px; margin: 0 auto;">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <div style="display: flex; justify-content: center;">
+            <input type="text" id="name" name="name" required style="width: 100%; max-width: 300px; padding: 10px; margin-bottom: 10px;">
+        </div>
 
         <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <div style="display: flex; justify-content: center;">
+            <input type="email" id="email" name="email" required style="width: 100%; max-width: 300px; padding: 10px; margin-bottom: 10px;">
+        </div>
 
         <label for="number">Número de Teléfono:</label>
-        <input type="number" id="number" name="number" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <div style="display: flex; justify-content: center;">
+            <input type="number" id="number" name="number" required style="width: 100%; max-width: 300px; padding: 10px; margin-bottom: 10px;">
+        </div>
 
         <label for="message">Explica brevemente tu propuesta:</label>
-        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+        <div style="display: flex; justify-content: center;">
+            <textarea id="message" name="message" rows="5" required style="width: 100%; max-width: 300px; padding: 10px; margin-bottom: 10px;"></textarea>
+        </div>
 
-        <input type="submit" value="Enviar" style="width: 100%; padding: 10px; margin-bottom: 10px;">
-        <input type="reset" value="Limpiar" style="width: 100%; padding: 10px;">
+        <div style="display: flex; justify-content: center;">
+            <input type="submit" value="Enviar" style="width: 100%; max-width: 300px; padding: 10px; margin-bottom: 10px;">
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <input type="reset" value="Limpiar" style="width: 100%; max-width: 300px; padding: 10px;">
+        </div>
     </form>
 </div>
+
 
 
 
